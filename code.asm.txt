@@ -1,0 +1,6 @@
+ori     $7, $0, 146      # put +146 into $7
+ori     $8, $0, 82       # put 82 into $8
+nor     $8, $8, $0       # reflect the content of $8
+ori     $9, $0,  1       # put 1 into the $9
+addu    $8, $8, $9       # add 1 to $8 = -82
+addu   $10, $7, $8       # $10=(+146) + (-82)
